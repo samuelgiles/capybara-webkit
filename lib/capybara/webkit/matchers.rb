@@ -1,7 +1,7 @@
 module Capybara
   module Webkit
     module RspecMatchers
-      RSpec::Matchers.define :has_errors do |expected|
+      RSpec::Matchers.define :have_errors do |expected|
         match do |actual|
           actual = resolve(actual)
           actual.error_messages.any?
